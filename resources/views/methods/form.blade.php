@@ -14,7 +14,8 @@
                 {!! Form::label('credits', 'Enter credits count') !!}
                 <br />
                 {!! Form::number('credits', 1, [
-                    'min' => 1
+                    'min' => 1,
+                    'class' => 'form-control'
                 ]) !!}
             </div>
             <div class="col-md-6">
@@ -22,12 +23,16 @@
                 <br />
                 {!! Form::number('alternatives', 1, [
                     'min' => 1,
+                    'class' => 'form-control'
                 ]) !!}
             </div>
         </div>
+    <br />
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                {!! Form::submit('Click Me!') !!}
+                {!! Form::submit('Click Me!', [
+                    'class' => 'btn btn-primary'
+                ]) !!}
             </div>
         </div>
     {!! Form::close() !!}

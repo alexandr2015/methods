@@ -17,7 +17,7 @@
                 </div>
                 <table class="table table-hover">
                     <thead>
-                        <tr>
+                        <tr class="warning">
                             <td>
 
                             </td>
@@ -31,19 +31,22 @@
                     <tbody>
                         @for ($i = 1; $i < $alternatives; $i++)
                             <tr>
-                                <td>
+                                <td class="warning">
                                     E{!! $i !!}
                                 </td>
                                 @for ($j = 1; $j < $credits; $j++)
                                     <td>
                                         {{--{!! Form::number('col'.$i.$j, '0') !!}--}}
-                                        {!! Form::number('data[' . $i . '][' . $j . ']', '0') !!}
+                                        {!! Form::number('data[' . $i . '][' . $j . ']', '0', [
+                                            'min' => 1,
+                                            'class' => 'form-control'
+                                        ]) !!}
                                     </td>
                                 @endfor
                             </tr>
                         @endfor
                         <tr>
-                            <td>priority</td>
+                            <td class="warning">priority</td>
                             @for ($j = 1; $j < $credits; $j++)
                                 <td>
                                     {!! Form::select('priority[' . $j . ']', $priority) !!}
@@ -52,13 +55,10 @@
                         </tr>
                     </tbody>
                 </table>
-            <select name="test" class="sel">
-                <option class="one">1</option>
-                <option class="one1">2</option>
-                <option class="one2">13</option>
-                <option class="one3">4</option>
-            </select>
-                {!! Form::submit('calculate') !!}
+                {!! Form::submit('calculate', [
+                    'class' => 'btn btn-primary'
+                ]) !!}
+
             {!! Form::close() !!}
         </div>
     </div>
