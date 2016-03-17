@@ -13,8 +13,11 @@
                 <div>
                     {!! Form::label('Choose method') !!}
                     <br />
-                    {!! Form::select('methods', $methods) !!}
+                    {!! Form::select('methods', $methods, '', [
+                        'class' => 'form-control',
+                    ]) !!}
                 </div>
+            <br />
                 <table class="table table-hover">
                     <thead>
                         <tr class="warning">
@@ -49,7 +52,9 @@
                             <td class="warning">priority</td>
                             @for ($j = 1; $j < $credits; $j++)
                                 <td>
-                                    {!! Form::select('priority[' . $j . ']', $priority) !!}
+                                    {!! Form::select('priority[' . $j . ']', $priority, '', [
+                                        'class' => 'form-control',
+                                    ]) !!}
                                 </td>
                             @endfor
                         </tr>
