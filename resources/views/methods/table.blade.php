@@ -52,8 +52,19 @@
                         </tr>
                     </tbody>
                 </table>
+            <select name="test" class="sel">
+                <option class="one">1</option>
+                <option class="one1">2</option>
+                <option class="one2">13</option>
+                <option class="one3">4</option>
+            </select>
                 {!! Form::submit('calculate') !!}
             {!! Form::close() !!}
         </div>
     </div>
+    <script>
+            $(".sel").click(function () {
+                debugger
+            });
+    </script>
 @stop

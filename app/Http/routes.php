@@ -11,16 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/methods', 'MethodsController@showForm');
+Route::get('/', 'MethodsController@showForm');
 
 Route::post('/table', [
     'as' => 'methods.table',
     'uses' => 'MethodsController@showTable',
 ]);
+
 Route::post('/calculate', [
     'as' => 'methods.calculate',
     'uses' => 'MethodsController@calculate'
