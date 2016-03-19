@@ -65,7 +65,7 @@
                                 ]) !!}
                             </td>
                         @endfor
-                        <td>
+                        <td width="80px">
                             {!! Form::number('first[' . $i . ']', '0', [
                                 'min' => 0,
                                 'class' => 'form-control'
@@ -78,7 +78,7 @@
                         <td>
                             {!! Form::select('second_signs[' . $i . ']', $signs) !!}
                         </td>
-                        <td>
+                        <td width="80px">
                             {!! Form::number('second[' . $i . ']', '0', [
                                 'min' => 0,
                                 'class' => 'form-control'
