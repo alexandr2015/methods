@@ -19,5 +19,6 @@
     <div class="container">
         @yield('content')
     </div>
+    <script href="/js/jquery-2.2.1.min.js"></script>
 </body>
 </html>

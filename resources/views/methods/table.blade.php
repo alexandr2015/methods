@@ -13,11 +13,14 @@
                 <div>
                     {!! Form::label('Choose method') !!}
                     <br />
-                    {!! Form::select('methods', $methods) !!}
+                    {!! Form::select('methods', $methods, '', [
+                        'class' => 'form-control',
+                    ]) !!}
                 </div>
+            <br />
                 <table class="table table-hover">
                     <thead>
-                        <tr>
+                        <tr class="warning">
                             <td>
 
                             </td>
@@ -31,29 +34,42 @@
                     <tbody>
                         @for ($i = 1; $i < $alternatives; $i++)
                             <tr>
-                                <td>
+                                <td class="warning">
                                     E{!! $i !!}
                                 </td>
                                 @for ($j = 1; $j < $credits; $j++)
                                     <td>
                                         {{--{!! Form::number('col'.$i.$j, '0') !!}--}}
-                                        {!! Form::number('data[' . $i . '][' . $j . ']', '0') !!}
+                                        {!! Form::number('data[' . $i . '][' . $j . ']', '0', [
+                                            'min' => 1,
+                                            'class' => 'form-control'
+                                        ]) !!}
                                     </td>
                                 @endfor
                             </tr>
                         @endfor
                         <tr>
-                            <td>priority</td>
+                            <td class="warning">priority</td>
                             @for ($j = 1; $j < $credits; $j++)
                                 <td>
-                                    {!! Form::select('priority[' . $j . ']', $priority) !!}
+                                    {!! Form::select('priority[' . $j . ']', $priority, '', [
+                                        'class' => 'form-control',
+                                    ]) !!}
                                 </td>
                             @endfor
                         </tr>
                     </tbody>
                 </table>
-                {!! Form::submit('calculate') !!}
+                {!! Form::submit('calculate', [
+                    'class' => 'btn btn-primary'
+                ]) !!}
+
             {!! Form::close() !!}
         </div>
     </div>
+    <script>
+            $(".sel").click(function () {
+                debugger
+            });
+    </script>
 @stop
