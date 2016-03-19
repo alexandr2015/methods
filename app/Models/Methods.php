@@ -9,7 +9,7 @@ class Methods extends Model
     public static function getMethods()
     {
         return [
-            'first' => 'first',
+            'limits_of_criteria' => 'Врахування допустимих меж критеріїв',
         ];
     }
 }

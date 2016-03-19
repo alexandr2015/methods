@@ -46,6 +46,29 @@
                                         ]) !!}
                                     </td>
                                 @endfor
+                                <td>
+                                    {!! Form::number('first[' . $i . '][' . $j . ']', '0', [
+                                        'min' => 0,
+                                        'class' => 'form-control'
+                                    ]) !!}
+                                </td>
+                                <td>
+                                    {!! Form::select('first_signs[' . $j . ']', \App\Models\Methods::$signs, '', [
+                                        'class' => 'form-control',
+                                    ]) !!}
+                                </td>
+                                <td>E{!! $i !!}</td>
+                                <td>
+                                    {!! Form::select('second_signs[' . $j . ']', \App\Models\Methods::$signs, '', [
+                                        'class' => 'form-control',
+                                    ]) !!}
+                                </td>
+                                <td>
+                                    {!! Form::number('second[' . $i . '][' . $j . ']', '0', [
+                                        'min' => 0,
+                                        'class' => 'form-control'
+                                    ]) !!}
+                                </td>
                             </tr>
                         @endfor
                         <tr>
@@ -60,16 +83,25 @@
                         </tr>
                     </tbody>
                 </table>
-                {!! Form::submit('calculate', [
-                    'class' => 'btn btn-primary'
-                ]) !!}
-
+                <div class="row">
+                    <div class="col-md-4">
+                        {!! Form::submit('calculate', [
+                            'class' => 'btn btn-primary'
+                        ]) !!}
+                    </div>
+                    <div class="col-md-4">
+                        {!! Form::reset('reset', [
+                            'class' => 'btn btn-warning'
+                        ]) !!}
+                    </div>
+                    <div class="col-md-4">
+                       {!! Html::link('/', 'Back', [
+                            'class' => 'btn btn-success',
+                            'width' => '100%',
+                       ]) !!}
+                    </div>
+                </div>
             {!! Form::close() !!}
         </div>
     </div>
-    <script>
-            $(".sel").click(function () {
-                debugger
-            });
-    </script>
 @stop

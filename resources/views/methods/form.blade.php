@@ -10,6 +10,15 @@
         ])
     !!}
         <div class="row">
+            <div class="col-md-12">
+                {!! Form::label('Choose method') !!}
+                <br />
+                {!! Form::select('method', $methods, '', [
+                    'class' => 'form-control',
+                ]) !!}
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-6">
                 {!! Form::label('credits', 'Enter credits count') !!}
                 <br />
@@ -36,15 +45,4 @@
             </div>
         </div>
     {!! Form::close() !!}
-    <script>
-        $('#form').validate({
-            rules: {
-                credits: 'required',
-                alternatives: 'required'
-            },
-            submitHandler: function(form) {
-                form.submit();
-            }
-        });
-    </script>
 @stop

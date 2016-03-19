@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'MethodsController@showForm');
+Route::get('/', [
+    'as' => 'methods.main',
+    'uses' => 'MethodsController@showForm',
+]);
 
 Route::post('/table', [
     'as' => 'methods.table',
