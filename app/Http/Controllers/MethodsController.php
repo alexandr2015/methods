@@ -60,7 +60,6 @@ class MethodsController extends Controller
                     if ($number !== false && isset($response[$number])) {
                         unset($response[$number]);
                     }
-                } else {
                 }
             }
         }

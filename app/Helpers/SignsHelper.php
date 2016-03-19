@@ -44,7 +44,7 @@ class SignsHelper extends Model
     public static function checkSign($sign)
     {
         if (!in_array($sign, self::getSigns())) {
-            throw new SignsException();
+            throw new SignsException($sign);
         }
     }
 
@@ -80,15 +80,15 @@ class SignsHelper extends Model
         } elseif ($firstSign != self::NONE && $secondSign == self::NONE) {
             return self::firstCondition($value, $firstSign, $firstNumber);
         } else {
-            return self::secondCondition($value, $secondSign, $secondNumber) &&
-                self::firstCondition($value, $firstSign, $firstNumber);
+            return self::firstCondition($value, $firstSign, $firstNumber) &&
+                self::secondCondition($value, $secondSign, $secondNumber);
         }
     }
 
     public static function firstCondition($value, $sign, $number)
     {
         $newSign = self::invert($sign);
-        return self::condition($number, $newSign, $value);
+        return self::condition($value, $newSign, $number);
     }
 
     public static function secondCondition($value, $sign, $number)
