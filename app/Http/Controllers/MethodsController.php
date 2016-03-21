@@ -38,31 +38,19 @@ class MethodsController extends Controller
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @return string
+     */
     public function calculate(Request $request)
     {
         $alternativesCount = $request->get('alternatives_count') - 1;
-        $response = range(1, $alternativesCount);
         $data = $request->get('data');
         $firstSigns = $request->get('first_signs');
         $firstNumbers = $request->get('first');
         $secondSigns = $request->get('second_signs');
         $secondNumber = $request->get('second');
-        foreach ($data as $criteriaNumber => $alternatives) {
-            foreach ($alternatives as $alternativeNumber => $alternative) {
-                if (!SignsHelper::rightCondition(
-                    $firstNumbers[$criteriaNumber],
-                    $firstSigns[$criteriaNumber],
-                    $alternative,
-                    $secondSigns[$criteriaNumber],
-                    $secondNumber[$criteriaNumber]
-                )) {
-                    $number = array_search($alternativeNumber, $response);
-                    if ($number !== false && isset($response[$number])) {
-                        unset($response[$number]);
-                    }
-                }
-            }
-        }
+        $response = LimitsOfCriteria::getFilteredAlternatives($data, $firstNumbers, $firstSigns, $secondSigns, $secondNumber, $alternativesCount);
         return json_encode(array_values($response));
     }
 }

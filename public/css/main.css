@@ -8,9 +8,6 @@ input[type=checkbox] {
 .slideThree {
     width: 80px;
     height: 26px;
-    /*background: #333;*/
-    /*margin: 20px auto;*/
-
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;

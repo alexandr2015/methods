@@ -43,7 +43,7 @@
                     </td>
                     @for ($i = 1; $i < $credits; $i++)
                         <td id="{!! $i !!}">
-                            C{!! $i !!}
+                            E{!! $i !!}
                         </td>
                     @endfor
                     <td>Optimization</td>
@@ -56,7 +56,7 @@
                 @for ($i = 1; $i < $alternatives; $i++)
                     <tr>
                         <td class="warning">
-                            E{!! $i !!}
+                            Q{!! $i !!}
                         </td>
                         @for ($j = 1; $j < $credits; $j++)
                             <td>
@@ -68,7 +68,7 @@
                         @endfor
                         <td>
                             <div class="slideThree">
-                                <input type="checkbox" value="None" id="<?= 'slideThree[' . $i . ']' ?>" name="<?= 'optimization[' . $i . ']' ?>" />
+                                <input type="checkbox" id="<?= 'slideThree[' . $i . ']' ?>" name="<?= 'optimization[' . $i . ']' ?>" />
                                 <label for="<?= 'slideThree[' . $i . ']' ?>"></label>
                             </div>
                         </td>
