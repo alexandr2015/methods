@@ -46,6 +46,7 @@
                             C{!! $i !!}
                         </td>
                     @endfor
+                    <td>Optimization</td>
                     <td align="center" colspan="5">
                         Requirements
                     </td>
@@ -65,18 +66,28 @@
                                 ]) !!}
                             </td>
                         @endfor
+                        <td>
+                            <div class="slideThree">
+                                <input type="checkbox" value="None" id="<?= 'slideThree[' . $i . ']' ?>" name="<?= 'optimization[' . $i . ']' ?>" />
+                                <label for="<?= 'slideThree[' . $i . ']' ?>"></label>
+                            </div>
+                        </td>
                         <td width="80px">
                             {!! Form::number('first[' . $i . ']', '0', [
                                 'min' => 0,
                                 'class' => 'form-control'
                             ]) !!}
                         </td>
-                        <td>
-                            {!! Form::select('first_signs[' . $i . ']', $signs)!!}
+                        <td width="80px">
+                            {!! Form::select('first_signs[' . $i . ']', $signs, '', [
+                                'class' => 'form-control'
+                            ])!!}
                         </td>
                         <td>E{!! $i !!}</td>
-                        <td>
-                            {!! Form::select('second_signs[' . $i . ']', $signs) !!}
+                        <td width="80px">
+                            {!! Form::select('second_signs[' . $i . ']', $signs, '', [
+                                'class' => 'form-control'
+                            ]) !!}
                         </td>
                         <td width="80px">
                             {!! Form::number('second[' . $i . ']', '0', [
