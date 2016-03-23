@@ -5,28 +5,28 @@
 @section('content')
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script>
-        $(function () {
-            $('form').on('submit', function (e) {
-                e.preventDefault();
-                $.ajax({
-                    type: 'post',
-                    url: '/calculate',
-                    data: $('form').serialize(),
-                    success: function (res) {
-                        var ids = JSON.parse(res);
-
-                        $("td").removeClass('danger');
-                        if (ids) {
-                            ids.forEach(function (item) {
-                                $('td#' + item).addClass('danger');
-                            })
-                        }
-                    }
-                });
-
-            });
-
-        });
+//        $(function () {
+//            $('form').on('submit', function (e) {
+//                e.preventDefault();
+//                $.ajax({
+//                    type: 'post',
+//                    url: '/calculate',
+//                    data: $('form').serialize(),
+//                    success: function (res) {
+//                        var ids = JSON.parse(res);
+//
+//                        $("td").removeClass('danger');
+//                        if (ids) {
+//                            ids.forEach(function (item) {
+//                                $('td#' + item).addClass('danger');
+//                            })
+//                        }
+//                    }
+//                });
+//
+//            });
+//
+//        });
     </script>
     <div class="row">
         <div class="col-md-12">
@@ -68,7 +68,7 @@
                         @endfor
                         <td>
                             <div class="slideThree">
-                                <input type="checkbox" id="<?= 'slideThree[' . $i . ']' ?>" name="<?= 'optimization[' . $i . ']' ?>" />
+                                <input type="checkbox" value="1" id="<?= 'slideThree[' . $i . ']' ?>" name="<?= 'optimization[' . $i . ']' ?>" />
                                 <label for="<?= 'slideThree[' . $i . ']' ?>"></label>
                             </div>
                         </td>
