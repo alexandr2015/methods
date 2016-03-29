@@ -29,4 +29,23 @@ class LimitsOfCriteria extends Model
 
         return $response;
     }
+
+    public static function applyOptimization($inputData, $leftColumns, $optimization)
+    {
+        $newData = [];
+        foreach ($leftColumns as $column) {
+            $newData[$column] = array_column($inputData, $column);
+        }
+        self::findMaxValuesFromArray($newData);
+    }
+
+    public static function findMaxValuesFromArray($data)
+    {
+
+    }
+
+    public static function getMaxIndexes($criteriaAlternatives)
+    {
+
+    }
 }

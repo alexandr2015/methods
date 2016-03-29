@@ -60,7 +60,7 @@
                         </td>
                         @for ($j = 1; $j < $credits; $j++)
                             <td>
-                                {!! Form::number('data[' . $i . '][' . $j . ']', '0', [
+                                {!! Form::number('data[' . $i . '][' . $j . ']', rand(1, 10), [
                                     'min' => 0,
                                     'class' => 'form-control'
                                 ]) !!}
