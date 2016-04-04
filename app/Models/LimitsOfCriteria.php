@@ -30,22 +30,64 @@ class LimitsOfCriteria extends Model
         return $response;
     }
 
-    public static function applyOptimization($inputData, $leftColumns, $optimization)
+    public static function applyOptimization($inputData, $leftColumns, $optimization) // null => min
     {
-        $newData = [];
-        foreach ($leftColumns as $column) {
-            $newData[$column] = array_column($inputData, $column);
+        //q criteria
+        $newData = self::getCorrectData($inputData, $leftColumns);
+
+        foreach ($newData as $criteriaNumber => $alternatives) {
+            if (count($alternatives) == 1) {
+                break;
+            }
+            if (isset($optimization[$criteriaNumber])) {
+                //max
+                $indexes = [];
+            } else {
+                $indexes = self::getMinValueAndIndex($alternatives);
+            }
+            $newData = self::getCorrectData($newData, $indexes);
         }
-        self::findMaxValuesFromArray($newData);
+
+        dd($newData, $optimization);
+
     }
 
-    public static function findMaxValuesFromArray($data)
+    public static function getMaxValueAndIndex()
     {
 
     }
 
-    public static function getMaxIndexes($criteriaAlternatives)
+    public static function getMinValueAndIndex($alternatives)
     {
+        $indexes = [key($alternatives)];
+        $values = [$alternatives[$indexes[0]]];
+        foreach ($alternatives as $alternativeNumber => $alternativeValue) {
+            if ($alternativeValue < $values[0]) {
+                $values[0] = $alternativeValue;
+                $indexes[0] = $alternativeNumber;
+            } elseif ($alternativeValue == $values[0]) {
+                if (!in_array($alternativeNumber, $indexes)) {
+                    $indexes[] = $alternativeNumber;
+                    $values[] = $alternativeValue;
+                }
+            }
+        }
 
+        return $indexes;
     }
+
+    public static function getCorrectData($inputData, $leftColumns)
+    {
+        foreach ($inputData as $criteria => &$criteriaValues) {
+            $countAltervatives = count($criteriaValues);
+            for ($i = 1; $i <= $countAltervatives; $i++) {
+                if (!in_array($i, $leftColumns)) {
+                    unset($criteriaValues[$i]);
+                }
+            }
+        }
+
+        return $inputData;
+    }
+
 }
