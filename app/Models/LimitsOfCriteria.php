@@ -35,26 +35,54 @@ class LimitsOfCriteria extends Model
         //q criteria
         $newData = self::getCorrectData($inputData, $leftColumns);
 
+        $newData = self::applyEdit($newData, $optimization);
+        foreach ($newData as $data) {
+            /**
+             * @todo refactor
+             */
+            return key($data);
+        }
+    }
+
+    public static function applyEdit($newData, $optimization)
+    {
         foreach ($newData as $criteriaNumber => $alternatives) {
             if (count($alternatives) == 1) {
                 break;
             }
             if (isset($optimization[$criteriaNumber])) {
-                //max
-                $indexes = [];
+                $indexes = self::getMaxValueAndIndex($alternatives);
             } else {
                 $indexes = self::getMinValueAndIndex($alternatives);
             }
             $newData = self::getCorrectData($newData, $indexes);
+            unset($newData[$criteriaNumber]);
+            return self::applyEdit($newData, $optimization);
         }
 
-        dd($newData, $optimization);
-
+        return $newData;
     }
 
-    public static function getMaxValueAndIndex()
+    /**
+     * @todo refactor getMaxValueAndIndex and getMinValueAndIndex
+     */
+    public static function getMaxValueAndIndex($alternatives)
     {
+        $indexes = [key($alternatives)];
+        $values = [$alternatives[$indexes[0]]];
+        foreach ($alternatives as $alternativeNumber => $alternativeValue) {
+            if ($alternativeValue > $values[0]) {
+                $values[0] = $alternativeValue;
+                $indexes[0] = $alternativeNumber;
+            } elseif ($alternativeValue == $values[0]) {
+                if (!in_array($alternativeNumber, $indexes)) {
+                    $indexes[] = $alternativeNumber;
+                    $values[] = $alternativeValue;
+                }
+            }
+        }
 
+        return $indexes;
     }
 
     public static function getMinValueAndIndex($alternatives)

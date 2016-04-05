@@ -54,6 +54,6 @@ class MethodsController extends Controller
         $optimizations = $request->has('optimization') ? $request->get('optimization') : [];
         $response = LimitsOfCriteria::applyOptimization($data, $response, $optimizations);
 
-        return json_encode(array_values($response));
+        return json_encode($response);
     }
 }
