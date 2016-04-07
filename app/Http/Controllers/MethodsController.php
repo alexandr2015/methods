@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\NumberHelper;
 use App\Models\LimitsOfCriteria;
 use App\Models\Methods;
 use App\Helpers\SignsHelper;
@@ -28,11 +29,11 @@ class MethodsController extends Controller
             'method',
         ]);
 
-        $priority = range(1, $params['credits']);
+        $priority = NumberHelper::getPriorities($params['credits']);
 
         return view('methods.' . $params['method'], [
-            'credits' => ++$params['credits'],
-            'alternatives' => ++$params['alternatives'],
+            'credits' => $params['credits'],
+            'alternatives' => $params['alternatives'],
             'priority' => $priority,
             'signs' => SignsHelper::getSigns(),
         ]);
@@ -62,5 +63,15 @@ class MethodsController extends Controller
         $response = LimitsOfCriteria::applyOptimization($data, $response, $optimizations);
 
         return json_encode($response);
+    }
+
+    public function lexicographicOptimization(Request $request)
+    {
+        $data = $request->get('data');
+        $optimizations = $request->has('optimization') ? $request->get('optimization') : [];
+        $priority = $request->get('priority');
+        $newData = LimitsOfCriteria::returnDataByPriority($data, $priority);
+        $response = LimitsOfCriteria::applyOptimization($newData, false, $optimizations);
+        dd($newData);
     }
 }

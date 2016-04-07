@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Helpers\SignsHelper;
+use App\Helpers\NumberHelper;
 use Illuminate\Database\Eloquent\Model;
 
 class LimitsOfCriteria extends Model
@@ -33,7 +34,11 @@ class LimitsOfCriteria extends Model
     public static function applyOptimization($inputData, $leftColumns, $optimization) // null => min
     {
         //q criteria
-        $newData = self::getCorrectData($inputData, $leftColumns);
+        if ($leftColumns) {
+            $newData = self::getCorrectData($inputData, $leftColumns);
+        } else {
+            $newData = $inputData;
+        }
 
         $newData = self::applyEdit($newData, $optimization);
         foreach ($newData as $data) {
@@ -121,6 +126,16 @@ class LimitsOfCriteria extends Model
         }
 
         return $inputData;
+    }
+
+    public static function returnDataByPriority($data, $priority)
+    {
+        $newData = [];
+        foreach ($priority as $count => $item) {
+            $newData[$count] = NumberHelper::getArrayColumn($data, $item);
+        }
+
+        return $newData;
     }
 
 }

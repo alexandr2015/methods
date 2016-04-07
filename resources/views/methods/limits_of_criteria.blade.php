@@ -35,7 +35,7 @@
                 <tr class="warning">
                     <td>
                     </td>
-                    @for ($i = 1; $i < $credits; $i++)
+                    @for ($i = 1; $i <= $credits; $i++)
                         <td id="{!! $i !!}">
                             E{!! $i !!}
                         </td>
@@ -47,12 +47,12 @@
                 </tr>
                 </thead>
                 <tbody>
-                @for ($i = 1; $i < $alternatives; $i++)
+                @for ($i = 1; $i <= $alternatives; $i++)
                     <tr>
                         <td class="warning">
                             Q{!! $i !!}
                         </td>
-                        @for ($j = 1; $j < $credits; $j++)
+                        @for ($j = 1; $j <= $credits; $j++)
                             <td>
                                 {!! Form::number('data[' . $i . '][' . $j . ']', rand(1, 10), [
                                     'min' => 0,

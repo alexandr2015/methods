@@ -25,6 +25,10 @@ Route::post('/calculate', [
     'as' => 'methods.calculate',
     'uses' => 'MethodsController@calculate'
 ]);
+Route::post('/lexicographicOptimization', [
+    'as' => 'methods.lexicographicOptimization',
+    'uses' => 'MethodsController@lexicographicOptimization'
+]);
 /*
 |--------------------------------------------------------------------------
 | Application Routes
