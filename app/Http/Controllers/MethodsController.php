@@ -50,7 +50,14 @@ class MethodsController extends Controller
         $firstNumbers = $request->get('first');
         $secondSigns = $request->get('second_signs');
         $secondNumber = $request->get('second');
-        $response = LimitsOfCriteria::getFilteredAlternatives($data, $firstNumbers, $firstSigns, $secondSigns, $secondNumber, $alternativesCount);
+        $response = LimitsOfCriteria::getFilteredAlternatives(
+            $data,
+            $firstNumbers,
+            $firstSigns,
+            $secondSigns,
+            $secondNumber,
+            $alternativesCount
+        );
         $optimizations = $request->has('optimization') ? $request->get('optimization') : [];
         $response = LimitsOfCriteria::applyOptimization($data, $response, $optimizations);
 

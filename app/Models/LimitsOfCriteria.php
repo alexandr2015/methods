@@ -56,7 +56,12 @@ class LimitsOfCriteria extends Model
                 $indexes = self::getMinValueAndIndex($alternatives);
             }
             $newData = self::getCorrectData($newData, $indexes);
-            unset($newData[$criteriaNumber]);
+            if (count($newData) != 1) {
+                unset($newData[$criteriaNumber]);
+            } else {
+                return $newData;
+            }
+
             return self::applyEdit($newData, $optimization);
         }
 
