@@ -138,4 +138,29 @@ class LimitsOfCriteria extends Model
         return $newData;
     }
 
+    public static function oneScale($data)
+    {
+        $newData = [];
+        foreach ($data as $criteriaNum => $criteriaAlternative) {
+            asort($criteriaAlternative);
+            $count = 1;
+            foreach ($criteriaAlternative as $item) {
+                $key = array_search($item, $criteriaAlternative);
+                $newData[$criteriaNum][$key] = $count;
+                $count++;
+            }
+            ksort($newData[$criteriaNum]);
+        }
+
+        return $newData;
+    }
+
+    public static function balanceCriteria($data, $priority)
+    {
+        $creteriaCount = count($data);
+        foreach ($data as $criteriaCount => $criteriaAlternative) {
+
+        }
+        dd($data, $priority);
+    }
 }

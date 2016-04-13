@@ -75,4 +75,13 @@ class MethodsController extends Controller
 
         return json_encode($response);
     }
+
+    public function linearConvolution(Request $request)
+    {
+        $data = $request->get('data');
+        $priority = $request->get('priority');
+        $newData = LimitsOfCriteria::oneScale($data);
+        $balanceCriteria = LimitsOfCriteria::balanceCriteria($newData, $priority);
+        dd($data, $newData);
+    }
 }

@@ -29,6 +29,10 @@ Route::post('/lexicographicOptimization', [
     'as' => 'methods.lexicographicOptimization',
     'uses' => 'MethodsController@lexicographicOptimization'
 ]);
+Route::post('/linearConvolution', [
+    'as' => 'methods.linearConvolution',
+    'uses' => 'MethodsController@linearConvolution'
+]);
 /*
 |--------------------------------------------------------------------------
 | Application Routes
