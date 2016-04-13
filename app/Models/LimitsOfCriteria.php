@@ -131,8 +131,8 @@ class LimitsOfCriteria extends Model
     public static function returnDataByPriority($data, $priority)
     {
         $newData = [];
-        foreach ($priority as $count => $item) {
-            $newData[$count] = NumberHelper::getArrayColumn($data, $item);
+        foreach ($priority as $item) {
+            $newData[$item] = $data[$item];
         }
 
         return $newData;

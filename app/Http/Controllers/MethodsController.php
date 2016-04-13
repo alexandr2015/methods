@@ -29,7 +29,7 @@ class MethodsController extends Controller
             'method',
         ]);
 
-        $priority = NumberHelper::getPriorities($params['credits']);
+        $priority = NumberHelper::getPriorities($params['alternatives']);
 
         return view('methods.' . $params['method'], [
             'credits' => $params['credits'],
@@ -72,6 +72,7 @@ class MethodsController extends Controller
         $priority = $request->get('priority');
         $newData = LimitsOfCriteria::returnDataByPriority($data, $priority);
         $response = LimitsOfCriteria::applyOptimization($newData, false, $optimizations);
-        dd($newData);
+
+        return json_encode($response);
     }
 }
