@@ -3,7 +3,34 @@
 @section('title', 'TableTitle')
 
 @section('content')
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        $(function () {
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'post',
+                    url: '/linearConvolution',
+                    data: $('form').serialize(),
+                    success: function (res) {
+                        res = JSON.parse(res);
+                        var tdCoef = $('td#' + res.coef.alternative), tdPriority = $('td#' + res.priority.alternative);
+                        //default
+                        tdCoef.text('E' + res.coef.alternative);
+                        tdPriority.text('E' + res.priority.alternative);
+                        $("td").removeClass('danger');
+                        //
+                        tdCoef.text(tdCoef.text() + ' by coef');
+                        tdPriority.text(tdPriority.text() + ' by priority');
+                        tdCoef.addClass('danger');
+                        tdPriority.addClass('danger');
+                    }
+                });
 
+            });
+
+        });
+    </script>
     <div class="row">
         <div class="col-md-12">
             {!! Form::open([

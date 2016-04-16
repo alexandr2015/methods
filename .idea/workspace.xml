@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95643a8b-5411-45fe-8063-5b7e8cb30c96" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/NumberHelper.php" afterPath="$PROJECT_DIR$/app/Helpers/NumberHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" afterPath="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" afterPath="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
     </list>
     <ignored path="methods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,36 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LimitsOfCriteria.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.185184">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-              <folding>
-                <element signature="e#30#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberHelper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Helpers/NumberHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.518518">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-              <folding>
-                <element signature="e#6#84#0#PHP" expanded="true" />
-                <element signature="e#109#170#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MethodsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MethodsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MethodsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.264151">
-              <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+            <state vertical-scroll-proportion="-14.518518">
+              <caret line="97" column="21" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="21" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
               </folding>
@@ -65,69 +37,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standard_9.php" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5925927">
-              <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="method_of_linear_convolution_of_criteria.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="method_of_linear_convolution_of_criteria.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.8915094">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
-                <marker date="1460569025830" expanded="true" signature="149:306" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="161:289" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="162:288" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1120:1326" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1134:1324" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1180:1323" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1456:1659" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1470:1657" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1512:1656" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1968:2073" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1982:2071" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="1996:2070" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2162:2262" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2175:2260" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2185:2259" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2351:2500" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2363:2498" placeholder="..." />
-                <marker date="1460569025830" expanded="true" signature="2377:2497" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lexicographic_optimization.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/methods/lexicographic_optimization.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="95" selection-end-column="10" />
-              <folding>
-                <marker date="1460566486062" expanded="true" signature="745:910" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="757:893" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="758:892" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="1766:1972" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="1780:1970" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="1826:1969" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2481:2626" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2495:2624" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2535:2623" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2935:3040" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2949:3038" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="2963:3037" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3129:3229" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3142:3227" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3152:3226" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3318:3467" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3330:3465" placeholder="..." />
-                <marker date="1460566486062" expanded="true" signature="3344:3464" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="1294:1451" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="1306:1434" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="1307:1433" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2299:2505" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2313:2503" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2359:2502" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2635:2838" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2649:2836" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2691:2835" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2932:3151" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2946:3149" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="2970:3148" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3460:3565" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3474:3563" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3488:3562" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3654:3754" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3667:3752" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3677:3751" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3843:3992" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3855:3990" placeholder="..." />
+                <marker date="1460830113626" expanded="true" signature="3869:3989" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -136,8 +72,8 @@
       <file leaf-file-name="limits_of_criteria.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/methods/limits_of_criteria.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state vertical-scroll-proportion="-15.333333">
+              <caret line="23" column="13" selection-start-line="5" selection-start-column="4" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <marker date="1460055224174" expanded="true" signature="731:880" placeholder="..." />
                 <marker date="1460055224174" expanded="true" signature="743:863" placeholder="..." />
@@ -206,10 +142,10 @@
         <option value="$PROJECT_DIR$/resources/views/methods/limits_of_criteria.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/methods/lexicographic_optimization.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
         <option value="$PROJECT_DIR$/app/Helpers/NumberHelper.php" />
         <option value="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
       </list>
     </option>
   </component>
@@ -546,7 +482,19 @@
       <option name="project" value="LOCAL" />
       <updated>1460570891680</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3 method, 1 step">
+      <created>1460828173980</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1460828173980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="3 method, 2 step">
+      <created>1460829276266</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1460829276266</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -559,6 +507,7 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23027888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25964546" sideWeight="0.5067437" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.49750534" order="7" side_tool="false" content_ui="tabs" />
@@ -566,7 +515,6 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2565688" sideWeight="0.49325627" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -617,7 +565,9 @@
     <MESSAGE value="start second method" />
     <MESSAGE value="added lexicographic optimization" />
     <MESSAGE value="starting 3 method" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting 3 method" />
+    <MESSAGE value="3 method, 1 step" />
+    <MESSAGE value="3 method, 2 step" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 method, 2 step" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,10 +907,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/methods/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Methods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7665094">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5925927">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/methods/limits_of_criteria.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="23" column="13" selection-start-line="5" selection-start-column="4" selection-end-line="23" selection-end-column="13" />
           <folding>
             <marker date="1460055224174" expanded="true" signature="731:880" placeholder="..." />
             <marker date="1460055224174" expanded="true" signature="743:863" placeholder="..." />
@@ -993,25 +973,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/methods/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.333333">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Methods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/methods/lexicographic_optimization.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="10" selection-start-line="22" selection-start-column="4" selection-end-line="95" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.30508474">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <marker date="1460566486062" expanded="true" signature="745:910" placeholder="..." />
             <marker date="1460566486062" expanded="true" signature="757:893" placeholder="..." />
@@ -1035,61 +1000,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7665094">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5925927">
-          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <marker date="1460569025830" expanded="true" signature="149:306" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="161:289" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="162:288" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1120:1326" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1134:1324" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1180:1323" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1456:1659" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1470:1657" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1512:1656" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1968:2073" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1982:2071" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="1996:2070" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2162:2262" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2175:2260" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2185:2259" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2351:2500" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2363:2498" placeholder="..." />
-            <marker date="1460569025830" expanded="true" signature="2377:2497" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.185184">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding>
-            <element signature="e#30#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Helpers/NumberHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.518518">
+        <state vertical-scroll-proportion="0.938983">
           <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
@@ -1098,12 +1011,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6338983">
+          <caret line="206" column="37" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
+          <folding>
+            <element signature="e#30#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MethodsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.264151">
-          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+        <state vertical-scroll-proportion="-14.518518">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="21" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8915094">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <marker date="1460830113626" expanded="true" signature="1294:1451" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="1306:1434" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="1307:1433" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2299:2505" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2313:2503" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2359:2502" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2635:2838" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2649:2836" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2691:2835" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2932:3151" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2946:3149" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="2970:3148" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3460:3565" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3474:3563" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3488:3562" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3654:3754" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3667:3752" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3677:3751" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3843:3992" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3855:3990" placeholder="..." />
+            <marker date="1460830113626" expanded="true" signature="3869:3989" placeholder="..." />
           </folding>
         </state>
       </provider>
