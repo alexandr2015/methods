@@ -146,6 +146,7 @@ class LimitsOfCriteria extends Model
             $count = 1;
             foreach ($criteriaAlternative as $item) {
                 $key = array_search($item, $criteriaAlternative);
+                unset($criteriaAlternative[$key]);
                 $newData[$criteriaNum][$key] = $count;
                 $count++;
             }
@@ -157,10 +158,44 @@ class LimitsOfCriteria extends Model
 
     public static function balanceCriteria($data, $priority)
     {
-        $creteriaCount = count($data);
-        foreach ($data as $criteriaCount => $criteriaAlternative) {
-
+        $newData = [];
+        $criteriaCount = count($data);
+        $sumPoints = NumberHelper::sumArifmeticProgression($criteriaCount);
+//        dd($data, $priority, $criteriaCount);
+        $weightSum = 0;
+        foreach ($data as $criteriaKey => $criteriaAlternative) {
+            $newData[$criteriaKey]['point'] = 0;
+            foreach ($priority[$criteriaKey] as $itemPriority) {
+                $newData[$criteriaKey]['point'] += $criteriaCount - $itemPriority + 1;
+            }
+            $newData[$criteriaKey]['avgPoint'] = $newData[$criteriaKey]['point'] / count($priority[$criteriaKey]);
+            $newData[$criteriaKey]['weight'] = $newData[$criteriaKey]['avgPoint'] / $sumPoints;
+            $weightSum += $newData[$criteriaKey]['weight']; // check if == 1
         }
-        dd($data, $priority);
+
+        return $newData;
+    }
+
+    public static function alternativePoints($data, $weights)
+    {
+        $returnData = [];
+        foreach ($data as $criteriaKey => $values) {
+            foreach ($values as $key => $value) {
+                $sumValue = $value * $weights[$criteriaKey]['weight'];
+                if (isset($returnData[$key])) {
+                    $returnData[$key] += $sumValue;
+                } else {
+                    $returnData[$key] = $sumValue;
+                }
+            }
+        }
+
+        return $returnData;
+    }
+
+    public static function getBestAlternative($alternatives)
+    {
+        arsort($alternatives);
+        return key($alternatives);
     }
 }

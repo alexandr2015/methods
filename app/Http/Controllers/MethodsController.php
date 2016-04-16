@@ -82,6 +82,13 @@ class MethodsController extends Controller
         $priority = $request->get('priority');
         $newData = LimitsOfCriteria::oneScale($data);
         $balanceCriteria = LimitsOfCriteria::balanceCriteria($newData, $priority);
-        dd($data, $newData);
+        $alternativePoint = LimitsOfCriteria::alternativePoints($newData, $balanceCriteria);
+        $bestAlternative = LimitsOfCriteria::getBestAlternative($alternativePoint);
+
+        return json_encode([
+            'balanceCriteria' => $balanceCriteria,
+            'alternativePoint' => $alternativePoint,
+            'alternative' => $bestAlternative,
+        ]);
     }
 }
