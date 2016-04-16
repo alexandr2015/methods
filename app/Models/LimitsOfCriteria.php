@@ -198,4 +198,15 @@ class LimitsOfCriteria extends Model
         arsort($alternatives);
         return key($alternatives);
     }
+
+    public static function getWeightByCoef($coef)
+    {
+        $returnData = [];
+        $coefSum = array_sum($coef);
+        foreach ($coef as $key => $value) {
+            $returnData[$key]['weight'] = $value / $coefSum;
+        }
+
+        return $returnData;
+    }
 }

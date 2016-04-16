@@ -23,6 +23,7 @@
                         </td>
                     @endfor
                     <td>Priority</td>
+                    <td>Coef</td>
                 </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,13 @@
                             {!! Form::select('priority[' . $i . '][]', $priority, $i, [
                                 'class' => 'form-control',
                                 'multiple'=>'multiple',
+                            ]) !!}
+                        </td>
+                        <td>
+                            {!! Form::number('coef[' . $i . ']', 1, [
+                                'min' => 0,
+                                'step' => 0.1,
+                                'class' => 'form-control'
                             ]) !!}
                         </td>
 

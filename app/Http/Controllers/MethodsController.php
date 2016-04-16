@@ -80,15 +80,26 @@ class MethodsController extends Controller
     {
         $data = $request->get('data');
         $priority = $request->get('priority');
+        $coef = $request->get('coef');
         $newData = LimitsOfCriteria::oneScale($data);
         $balanceCriteria = LimitsOfCriteria::balanceCriteria($newData, $priority);
         $alternativePoint = LimitsOfCriteria::alternativePoints($newData, $balanceCriteria);
         $bestAlternative = LimitsOfCriteria::getBestAlternative($alternativePoint);
+        $dataByCoef = LimitsOfCriteria::getWeightByCoef($coef);
+        $alternativePointCoef = LimitsOfCriteria::alternativePoints($newData, $dataByCoef);
+        $bestAlternativeCoef = LimitsOfCriteria::getBestAlternative($alternativePointCoef);
 
         return json_encode([
-            'balanceCriteria' => $balanceCriteria,
-            'alternativePoint' => $alternativePoint,
-            'alternative' => $bestAlternative,
+            'coef' => [
+                'coefCriteria' => $dataByCoef,
+                'alternativePoint' => $alternativePointCoef,
+                'alternative' => $bestAlternativeCoef,
+            ],
+            'priority' => [
+                'balanceCriteria' => $balanceCriteria,
+                'alternativePoint' => $alternativePoint,
+                'alternative' => $bestAlternative,
+            ]
         ]);
     }
 }
