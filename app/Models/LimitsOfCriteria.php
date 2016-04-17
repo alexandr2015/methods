@@ -181,11 +181,7 @@ class LimitsOfCriteria extends Model
         $returnData = [];
         foreach ($data as $criteriaKey => $values) {
             foreach ($values as $key => $value) {
-                if (!$keyWeight) {
-                    $sumValue = $value * $weights[$criteriaKey];
-                } else {
-                    $sumValue = $value * $weights[$criteriaKey][$keyWeight];
-                }
+                $sumValue = $value * $weights[$criteriaKey][$keyWeight];
                 if (isset($returnData[$key])) {
                     $returnData[$key] += $sumValue;
                 } else {
@@ -209,6 +205,23 @@ class LimitsOfCriteria extends Model
         $coefSum = array_sum($coef);
         foreach ($coef as $key => $value) {
             $returnData[$key]['weight'] = $value / $coefSum;
+        }
+
+        return $returnData;
+    }
+
+    public static function alternativeMultiConvolution($data, $weights)
+    {
+        $returnData = [];
+        foreach ($data as $criteriaKey => $values) {
+            foreach ($values as $key => $value) {
+                $sumValue = pow($value, $weights[$criteriaKey]);
+                if (isset($returnData[$key])) {
+                    $returnData[$key] *= $sumValue;
+                } else {
+                    $returnData[$key] = $sumValue;
+                }
+            }
         }
 
         return $returnData;

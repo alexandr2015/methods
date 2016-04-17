@@ -107,7 +107,7 @@ class MethodsController extends Controller
     {
         $data = $request->get('data');
         $coef = $request->get('coef');
-        $alternativePointCoef = LimitsOfCriteria::alternativePoints($data, $coef, false);
+        $alternativePointCoef = LimitsOfCriteria::alternativeMultiConvolution($data, $coef, false);
         $bestAlternativeCoef = LimitsOfCriteria::getBestAlternative($alternativePointCoef);
 
         return json_encode([
