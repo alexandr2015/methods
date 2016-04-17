@@ -17,9 +17,7 @@
                         $('td#' + res).addClass('danger');
                     }
                 });
-
             });
-
         });
     </script>
     <div class="row">

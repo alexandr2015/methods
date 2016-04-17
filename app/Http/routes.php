@@ -33,6 +33,10 @@ Route::post('/linearConvolution', [
     'as' => 'methods.linearConvolution',
     'uses' => 'MethodsController@linearConvolution'
 ]);
+Route::post('/multiplicativeConvolution', [
+    'as' => 'methods.multiplicativeConvolution',
+    'uses' => 'MethodsController@multiplicativeConvolution'
+]);
 /*
 |--------------------------------------------------------------------------
 | Application Routes

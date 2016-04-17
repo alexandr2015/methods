@@ -102,4 +102,18 @@ class MethodsController extends Controller
             ]
         ]);
     }
+
+    public function multiplicativeConvolution(Request $request)
+    {
+        $data = $request->get('data');
+        $coef = $request->get('coef');
+        $alternativePointCoef = LimitsOfCriteria::alternativePoints($data, $coef, false);
+        $bestAlternativeCoef = LimitsOfCriteria::getBestAlternative($alternativePointCoef);
+
+        return json_encode([
+            'coef' => [
+                'alternative' => $bestAlternativeCoef,
+            ]
+        ]);
+    }
 }

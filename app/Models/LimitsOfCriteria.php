@@ -176,12 +176,16 @@ class LimitsOfCriteria extends Model
         return $newData;
     }
 
-    public static function alternativePoints($data, $weights)
+    public static function alternativePoints($data, $weights, $keyWeight = 'weight')
     {
         $returnData = [];
         foreach ($data as $criteriaKey => $values) {
             foreach ($values as $key => $value) {
-                $sumValue = $value * $weights[$criteriaKey]['weight'];
+                if (!$keyWeight) {
+                    $sumValue = $value * $weights[$criteriaKey];
+                } else {
+                    $sumValue = $value * $weights[$criteriaKey][$keyWeight];
+                }
                 if (isset($returnData[$key])) {
                     $returnData[$key] += $sumValue;
                 } else {
