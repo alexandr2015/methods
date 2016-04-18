@@ -7,7 +7,12 @@ class CustomValidator
 
     public function priority($attribute, $value, $parameters, $validator)
     {
-        return false;
+        $uniqueArray = array_unique($value);
+        if (count($uniqueArray) != count($value)) {
+            return false;
+        }
+
+        return true;
     }
 
 }

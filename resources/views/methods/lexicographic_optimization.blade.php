@@ -4,6 +4,7 @@
 
 @section('content')
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
     <script>
         $(function () {
             $('form').on('submit', function (e) {
@@ -17,8 +18,7 @@
                         $('td#' + res).addClass('danger');
                     },
                     error: function (res) {
-
-                        debugger
+                        alert('Validation error');
                     }
                 });
             });
@@ -97,5 +97,15 @@
             </div>
             {!! Form::close() !!}
         </div>
+    </div>
+    <div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">
+        <button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>
+        <span data-notify="icon"></span>
+        <span data-notify="title">{1}</span>
+        <span data-notify="message">{2}</span>
+        <div class="progress" data-notify="progressbar">
+            <div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+        </div>
+        <a href="{3}" target="{4}" data-notify="url"></a>
     </div>
 @stop

@@ -68,7 +68,6 @@ class MethodsController extends Controller
 
     public function lexicographicOptimization(lexicographicOptimizationRequest $request)
     {
-        dd($request->all());
         $data = $request->get('data');
         $optimizations = $request->has('optimization') ? $request->get('optimization') : [];
         $priority = $request->get('priority');
