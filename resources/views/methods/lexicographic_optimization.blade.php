@@ -15,6 +15,10 @@
                     success: function (res) {
                         $("td").removeClass('danger');
                         $('td#' + res).addClass('danger');
+                    },
+                    error: function (res) {
+
+                        debugger
                     }
                 });
             });

@@ -87,9 +87,10 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+    'priority' => 'Check your priority',
 
     'custom' => [
-        'attribute-name' => [
+        'priority' => [
             'rule-name' => 'custom-message',
         ],
     ],
