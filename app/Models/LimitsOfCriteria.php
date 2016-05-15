@@ -41,6 +41,10 @@ class LimitsOfCriteria extends Model
         }
 
         $newData = self::applyEdit($newData, $optimization);
+        if (!is_array($newData)) {
+            return $newData;
+        }
+
         foreach ($newData as $data) {
             /**
              * @todo refactor
@@ -60,7 +64,11 @@ class LimitsOfCriteria extends Model
             } else {
                 $indexes = self::getMinValueAndIndex($alternatives);
             }
+
             $newData = self::getCorrectData($newData, $indexes);
+            if (count($indexes) == 1) {
+                return $indexes[0];
+            }
             if (count($newData) != 1) {
                 unset($newData[$criteriaNumber]);
             } else {
@@ -131,9 +139,9 @@ class LimitsOfCriteria extends Model
     public static function returnDataByPriority($data, $priority)
     {
         $newData = [];
-        $count = 1;
+//        $count = 1;
         foreach ($priority as $item) {
-            $newData[$count++] = $data[$item];
+            $newData[$item] = $data[$item];
         }
 
         return $newData;
