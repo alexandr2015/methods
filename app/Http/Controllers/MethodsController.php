@@ -47,7 +47,7 @@ class MethodsController extends Controller
     public function calculate(Request $request)
     {
         $data = $request->get('data');
-        $alternativesCount = $request->get('alternatives_count') - 1;
+        $alternativesCount = $request->get('alternatives_count');
         $firstSigns = $request->get('first_signs');
         $firstNumbers = $request->get('first');
         $secondSigns = $request->get('second_signs');

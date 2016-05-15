@@ -162,7 +162,6 @@ class LimitsOfCriteria extends Model
         $newData = [];
         $criteriaCount = count($data);
         $sumPoints = NumberHelper::sumArifmeticProgression($criteriaCount);
-//        dd($data, $priority, $criteriaCount);
         $weightSum = 0;
         foreach ($data as $criteriaKey => $criteriaAlternative) {
             $newData[$criteriaKey]['point'] = 0;
