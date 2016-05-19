@@ -4,7 +4,51 @@
 
 @section('content')
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="js/linear_convolution_of_criteria.js"></script>
+    <script src="/js/linear_convolution_of_criteria.js"></script>
+    <script>
+        $(function () {
+            $('form').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: 'post',
+                    url: '/linearConvolution',
+                    data: $('form').serialize(),
+                    success: function (res) {
+                        res = JSON.parse(res);
+                        var tdCoef = $('td#' + res.coef.alternative), tdPriority = $('td#' + res.priority.alternative);
+                        for(var i = 1; i <= res.coef.alternative; i++) {
+                            $('td#' + i).text('E' + i);
+                        }
+                        $("td").removeClass('danger');
+                        //
+                        tdCoef.text(tdCoef.text() + ' by coef');
+                        tdPriority.text(tdPriority.text() + ' by priority');
+                        tdCoef.addClass('danger');
+                        tdPriority.addClass('danger');
+                        buildWeightTable(res);
+                    }
+                });
+            });
+        });
+
+        function buildWeightTable(data) {
+            for (var i = 1; i <= Object.keys(data.coef.alternativePoint).length; i++) {
+                $("#one" + i).text(data.coef.alternativePoint[i]);
+            }
+
+            for (var i = 1; i <= Object.keys(data.coef.coefCriteria).length; i++) {
+                $("#two" + i).text(data.coef.coefCriteria[i].weight);
+            }
+
+            for (var i = 1; i <= Object.keys(data.priority.alternativePoint).length; i++) {
+                $("#tree" + i).text(data.priority.alternativePoint[i]);
+            }
+
+            for (var i = 1; i <= Object.keys(data.priority.balanceCriteria).length; i++) {
+                $("#four" + i).text(data.priority.balanceCriteria[i].weight);
+            }
+        }
+    </script>
     <div class="row">
         <div class="col-md-12">
             {!! Form::open([
@@ -82,7 +126,50 @@
         </div>
     </div>
     <div id="response">
-
+        <table class="table" style="text-align: center">
+            <tr>
+                <td colspan="{!! $alternatives !!}">One</td>
+            </tr>
+            <tbody>
+            <tr>
+                @for ($i = 1; $i <= $alternatives; $i++)
+                    <td id="one{!! $i !!}"></td>
+                @endfor
+            </tr>
+            </tbody>
+        </table>
+        <table class="table" style="text-align: center">
+            <tr>
+                <td colspan="{!! $credits !!}">Two</td>
+            </tr>
+            <tr>
+                @for ($i = 1; $i <= $credits; $i++)
+                    <td id="two{!! $i !!}"></td>
+                @endfor
+            </tr>
+        </table>
+        <table class="table" style="text-align: center">
+            <tr>
+                <td colspan="{!! $alternatives !!}">Tree</td>
+            </tr>
+            <tbody>
+            <tr>
+                @for ($i = 1; $i <= $alternatives; $i++)
+                    <td id="tree{!! $i !!}"></td>
+                @endfor
+            </tr>
+            </tbody>
+        </table>
+        <table class="table" style="text-align: center">
+            <tr>
+                <td colspan="{!! $credits !!}">Four</td>
+            </tr>
+            <tr>
+                @for ($i = 1; $i <= $credits; $i++)
+                    <td id="four{!! $i !!}"></td>
+                @endfor
+            </tr>
+        </table>
     </div>
 
 @stop

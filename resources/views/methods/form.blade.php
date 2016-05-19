@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                {!! Form::label('credits', 'Enter credits count') !!}
+                {!! Form::label('credits', 'Enter alternative count') !!}
                 <br />
                 {!! Form::number('credits', 1, [
                     'min' => 1,
@@ -28,7 +28,7 @@
                 ]) !!}
             </div>
             <div class="col-md-6">
-                {!! Form::label('alternatives', 'Enter alternative count') !!}
+                {!! Form::label('alternatives', 'Enter credits count') !!}
                 <br />
                 {!! Form::number('alternatives', 1, [
                     'min' => 1,
