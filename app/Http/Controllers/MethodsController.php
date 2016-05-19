@@ -52,6 +52,7 @@ class MethodsController extends Controller
         $firstNumbers = $request->get('first');
         $secondSigns = $request->get('second_signs');
         $secondNumber = $request->get('second');
+
         $response = LimitsOfCriteria::getFilteredAlternatives(
             $data,
             $firstNumbers,
@@ -61,6 +62,12 @@ class MethodsController extends Controller
             $alternativesCount
         );
         $optimizations = $request->has('optimization') ? $request->get('optimization') : [];
+        foreach ($firstSigns as $key => $sign) {
+            if ($sign != '-' || $secondSigns[$key] != '-') {
+                $optimizations[$key] = 'none';
+            }
+        }
+
         $response = LimitsOfCriteria::applyOptimization($data, $response, $optimizations);
 
         return json_encode($response);

@@ -59,12 +59,16 @@ class LimitsOfCriteria extends Model
             if (count($alternatives) == 1) {
                 break;
             }
+
             if (isset($optimization[$criteriaNumber])) {
-                $indexes = self::getMaxValueAndIndex($alternatives);
+                if ($optimization[$criteriaNumber] == 'none') {
+                    $indexes = array_keys($alternatives);
+                } else {
+                    $indexes = self::getMaxValueAndIndex($alternatives);
+                }
             } else {
                 $indexes = self::getMinValueAndIndex($alternatives);
             }
-
             $newData = self::getCorrectData($newData, $indexes);
             if (count($indexes) == 1) {
                 return $indexes[0];

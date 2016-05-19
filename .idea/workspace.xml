@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95643a8b-5411-45fe-8063-5b7e8cb30c96" name="Default" comment="added table with add info 3 method">
+    <list default="true" id="95643a8b-5411-45fe-8063-5b7e8cb30c96" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/linear_convolution_of_criteria.js" afterPath="$PROJECT_DIR$/public/js/linear_convolution_of_criteria.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/methods/form.blade.php" afterPath="$PROJECT_DIR$/resources/views/methods/form.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" afterPath="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" afterPath="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" />
     </list>
     <ignored path="methods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,79 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="multiplicative_convolution.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/methods/multiplicative_convolution.blade.php">
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1460900895540" expanded="true" signature="276:441" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="288:424" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="289:423" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1251:1457" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1265:1455" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1311:1454" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1587:1806" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1601:1804" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="1625:1803" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2115:2220" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2129:2218" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2143:2217" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2309:2409" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2322:2407" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2332:2406" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2498:2647" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2510:2645" placeholder="..." />
-                <marker date="1460900895540" expanded="true" signature="2524:2644" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="method_of_linear_convolution_of_criteria.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
+      <file leaf-file-name="MethodsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MethodsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="e#4999#5025#0#HTML" expanded="true" />
-                <element signature="e#5375#5401#0#HTML" expanded="true" />
-                <element signature="e#5700#5726#0#HTML" expanded="true" />
-                <element signature="e#6078#6104#0#HTML" expanded="true" />
-                <marker date="1463681191889" expanded="true" signature="2142:2299" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="2154:2282" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="2155:2281" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3147:3353" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3161:3351" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3207:3350" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3483:3686" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3497:3684" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3539:3683" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3780:3999" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3794:3997" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="3818:3996" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4308:4413" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4322:4411" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4336:4410" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4502:4602" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4515:4600" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4525:4599" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4691:4840" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4703:4838" placeholder="..." />
-                <marker date="1463681191889" expanded="true" signature="4717:4837" placeholder="..." />
-              </folding>
+            <state relative-caret-position="-657">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linear_convolution_of_criteria.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/linear_convolution_of_criteria.js">
+      <file leaf-file-name="LimitsOfCriteria.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="410">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,11 +100,11 @@
         <option value="$PROJECT_DIR$/app/Http/Validators/CustomValidator.php" />
         <option value="$PROJECT_DIR$/public/js/bootstrap-notify.js" />
         <option value="$PROJECT_DIR$/resources/views/methods/lexicographic_optimization.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" />
-        <option value="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" />
         <option value="$PROJECT_DIR$/resources/views/methods/form.blade.php" />
         <option value="$PROJECT_DIR$/public/js/linear_convolution_of_criteria.js" />
         <option value="$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/LimitsOfCriteria.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MethodsController.php" />
       </list>
     </option>
   </component>
@@ -318,38 +270,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="methods" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="methods" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -479,7 +399,7 @@
       <workItem from="1463298024593" duration="1282000" />
       <workItem from="1463299531863" duration="17000" />
       <workItem from="1463677946729" duration="61000" />
-      <workItem from="1463678035326" duration="3220000" />
+      <workItem from="1463678035326" duration="4491000" />
     </task>
     <task id="LOCAL-00001" summary="fixed bugs with calculation&#10;">
       <created>1458397264639</created>
@@ -614,18 +534,25 @@
       <option name="project" value="LOCAL" />
       <updated>1463297383658</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added table with add info 3 method">
+      <created>1463681265992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1463681265992</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14677000" />
+    <option name="totallyTimeSpent" value="15948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="18" width="1317" height="750" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24235295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15058823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32674772" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25964546" sideWeight="0.5067437" order="10" side_tool="true" content_ui="tabs" />
@@ -678,6 +605,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="fixed bugs with calculation&#10;" />
     <MESSAGE value="added methods&#10;" />
     <MESSAGE value="added optimization&#10;" />
@@ -723,13 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -810,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MethodsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/methods/limits_of_criteria.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,6 +775,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="e#4999#5025#0#HTML" expanded="true" />
+            <element signature="e#5375#5401#0#HTML" expanded="true" />
+            <element signature="e#5700#5726#0#HTML" expanded="true" />
+            <element signature="e#6078#6104#0#HTML" expanded="true" />
+            <marker date="1463681191889" expanded="true" signature="2142:2299" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="2154:2282" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="2155:2281" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3147:3353" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3161:3351" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3207:3350" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3483:3686" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3497:3684" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3539:3683" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3780:3999" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3794:3997" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="3818:3996" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4308:4413" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4322:4411" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4336:4410" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4502:4602" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4515:4600" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4525:4599" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4691:4840" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4703:4838" placeholder="..." />
+            <marker date="1463681191889" expanded="true" signature="4717:4837" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/methods/multiplicative_convolution.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-32">
@@ -899,37 +846,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/methods/method_of_linear_convolution_of_criteria.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#4999#5025#0#HTML" expanded="true" />
-            <element signature="e#5375#5401#0#HTML" expanded="true" />
-            <element signature="e#5700#5726#0#HTML" expanded="true" />
-            <element signature="e#6078#6104#0#HTML" expanded="true" />
-            <marker date="1463681191889" expanded="true" signature="2142:2299" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="2154:2282" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="2155:2281" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3147:3353" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3161:3351" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3207:3350" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3483:3686" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3497:3684" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3539:3683" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3780:3999" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3794:3997" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="3818:3996" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4308:4413" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4322:4411" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4336:4410" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4502:4602" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4515:4600" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4525:4599" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4691:4840" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4703:4838" placeholder="..." />
-            <marker date="1463681191889" expanded="true" signature="4717:4837" placeholder="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/LimitsOfCriteria.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MethodsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-657">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
